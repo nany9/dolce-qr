@@ -10,6 +10,5 @@ tg.showScanQrPopup({text: "Отсканируйте QR-код на чеке"}, f
 });
 
 tg.onEvent("scanQrPopupClosed", function(){
-    tg.sendData('App closed');
     tg.close();
 });
