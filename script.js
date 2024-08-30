@@ -3,3 +3,7 @@ tg.showScanQrPopup({text: "Отсканируйте QR-код на чеке"}, f
     tg.sendData(text);
     tg.closeScanQrPopup();
 });
+
+tg.onEvent("scanQrPopupClosed", function(){
+    tg.close();
+});
